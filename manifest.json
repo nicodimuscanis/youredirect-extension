@@ -2,8 +2,8 @@
   "manifest_version": 2,
   "name": "YouTube Redirect",
   "version": "0.1",
-  "description": "Redirects YouTube links to Piped.",
-  "permissions": ["tabs", "webNavigation", "storage"],
+  "description": "Redirects YouTube links to Piped",
+  "permissions": ["tabs", "webNavigation", "storage", "activeTab"],
   "browser_action": {
     "default_icon": "icon48.png",
     "default_popup": "popup.html"
@@ -21,5 +21,8 @@
       "matches": ["*://www.youtube.com/*"],
       "js": ["content.js"]
     }
+  ],
+  "web_accessible_resources": [
+    "content.js"
   ]
 }
