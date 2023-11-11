@@ -8,7 +8,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
 });
 
 chrome.runtime.onInstalled.addListener(function () {
-  // Установите значение по умолчанию при первой установке расширения
+  // значение по умолчанию при первой установке расширения
   chrome.storage.sync.get('redirectOption', function (data) {
     redirectOption = data.redirectOption || 'disabled';
   });
@@ -27,21 +27,21 @@ function handleLink(url) {
   });
 }
 
-// Добавляем обработчик для кликов
+// обработчик для кликов
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
   if (request.action === 'checkLink') {
     handleLink(request.url);
   }
 });
 
-// Добавляем обработчик для обновления вкладок
+// обработчик для обновления вкладок
 chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
   if (changeInfo.url) {
     handleLink(changeInfo.url);
   }
 });
 
-// Добавляем обработчик для события перед навигацией
+// обработчик для события перед навигацией
 chrome.webNavigation.onBeforeNavigate.addListener(function (details) {
   if (details.url) {
     handleLink(details.url);
