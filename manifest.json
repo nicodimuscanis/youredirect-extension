@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube Redirect",
+  "version": "0.1",
+  "description": "Redirects YouTube to another Piped.",
+  "permissions": ["tabs", "webNavigation"],
+  "browser_action": {
+    "default_icon": "icon48.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "48": "icon48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
