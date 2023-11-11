@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>YouTube Redirect</title>
   <style>
     body {
@@ -8,9 +9,15 @@
       padding: 10px;
     }
   </style>
+  <script src="popup.js"></script>
 </head>
 <body>
   <h2>YouTube Redirect</h2>
-  <p>Extension is active.</p>
+  <label for="redirectOptions">Выберите опцию:</label>
+  <select id="redirectOptions">
+    <option value="disabled">Перенаправление отключено</option>
+    <option value="az">az.piped.video</option>
+    <option value="fl">fl.piped.video</option>
+  </select>
 </body>
 </html>
