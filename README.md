@@ -1,4 +1,7 @@
 # youredirect-extension, v0.1
+
+![YouRedirect](https://github.com/nicodimuscanis/youredirect-extension/blob/master/youredirect.jpg?raw=true)
+
 Расширение для браузеров на основе Chromium, которое позволяет смотреть **Youtube** видео через альтернативный фронтэнд **Piped**.
 
 *Преимущества:*
