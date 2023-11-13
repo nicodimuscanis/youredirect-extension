@@ -2,7 +2,7 @@
 
 ![YouRedirect](https://github.com/nicodimuscanis/youredirect-extension/blob/master/youredirect.jpg?raw=true)
 
-Расширение для браузеров на основе Chromium, которое позволяет смотреть **Youtube** видео через альтернативный фронтэнд **Piped**.
+Расширение для браузеров на основе Chromium, которое позволяет смотреть **Youtube** видео через альтернативный фронтэнд **[Piped](https://github.com/TeamPiped/Piped)**.
 
 *Преимущества:*
 1. Блокировка рекламы в Youtube
