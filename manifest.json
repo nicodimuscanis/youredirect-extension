@@ -1,17 +1,14 @@
 {
-  "manifest_version": 2,
-  "name": "YouTube Redirect",
+  "manifest_version": 3,
+  "name": "YouRedirect",
   "version": "0.1",
   "description": "Redirects YouTube links to Piped",
   "permissions": ["tabs", "webNavigation", "storage", "activeTab"],
-  "browser_action": {
-    "default_icon": "icon48.png",
-    "default_popup": "popup.html"
+  "options_ui": {
+    "page": "options.html"
   },
-  "options_page": "options.html",
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "icons": {
     "48": "icon48.png"
@@ -23,6 +20,9 @@
     }
   ],
   "web_accessible_resources": [
-    "content.js"
+    {
+      "resources": ["content.js"],
+      "matches": ["*://www.youtube.com/*"]
+    }
   ]
 }
