@@ -33,7 +33,7 @@ function canContinue() { return getLast().continuationItemRenderer != null }
   }).join('\n');
   preText.innerText = csvText;
   let downloadLink = document.createElement('a');
-  downloadLink.innerText = 'Download CSV';
+  downloadLink.innerText = 'Скачать CSV';
   downloadLink.setAttribute('target', '_blank');
   downloadLink.setAttribute('style', `color: #bf3838;
   font-weight: bold;
