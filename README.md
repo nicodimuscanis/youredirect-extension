@@ -32,7 +32,7 @@
 1. Зайти на [страницу подписок Youtube](https://www.youtube.com/feed/channels)
 2. Правый клик и выбрать "посмотреть код" или Ctrl+Shift+J
 3. В открывшемся окне выбрать Console, скопировать и вставить код из файла [get-subsctiptions.js](https://github.com/nicodimuscanis/youredirect-extension/blob/master/get-subscriptions.js), Enter
-4. Сверху появившегося списка подписок нажать "Скачать CSV", сохранить у себя в виде файла
+4. В открывшемся диалоговом окне сохранить список подписок в файле `subscriptions.csv`
 5. На странице `https:\\<используемый адрес Piped сервера>/import` выбрать созданный файл с подписками
 
 ## Использование
