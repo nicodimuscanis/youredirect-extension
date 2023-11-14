@@ -4,6 +4,15 @@
   "version": "0.1",
   "description": "Redirects YouTube links to Piped",
   "permissions": ["tabs", "webNavigation", "storage", "activeTab"],
+  "host_permissions": [
+    "*://www.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon48.png"
+    }
+  },
   "options_ui": {
     "page": "options.html"
   },
